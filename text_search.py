@@ -48,7 +48,7 @@ def main(args):
 
     s = Search(filename=args.filename)
 
-    with open('d:\\Programming\\ML\\min-char-rnn\\names.txt', encoding='utf-8', mode='r') as f:
+    with open('data/names.txt', encoding='utf-8', mode='r') as f:
         lines = f.readlines()
 
     for name in [l for l in lines if len(l) == 4 and len(l) > 2]:
